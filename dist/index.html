@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/x-icon">
+    <script src="./script/index.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Js Book Finder</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-slate-200 flex items-center shadow-xl fixed w-full">
+        <img class="pl-6 py-2 w-20" src="./public/img/logo.png" alt="">
+        <h1 class="px-4 align-middle text-black text-3xl"> Book Finder </h1>
+    </nav>
+    
+    <div class="bg-cover bg-center grid place-content-center" style="background-image: url('./public/img/bg.jpg'); height: 25rem;">
+        <h1 class="text-5xl text-white text-center"> Find your books </h1>
+        <h1 class="text-xl text-white text-center mt-2"> The best place to find any book according to your need. </h1>
+    </div>
+
+    <!-- Search Box -->
+    <div class="bg-white flex-row w-4/5 m-auto shadow-lg rounded-lg flex p-3 -mt-16 max-w-screen-2xl">
+        <div class="flex flex-col w-full pr-3 ">
+            <p class="text-lg italic font-normal text-justify bg-slate-200 text-black p-2 rounded-md mb-2 sm:text-2xl  sm:text-center"> "You know you’ve read a good book when you turn the last page and feel a little as if you have lost a friend" </p>
+            <!-- <form action=""> -->
+                <div class="flex flex-col">
+                    <input class="text-sm mt-1 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-lg focus:ring-1" id="search__Keyword" type="text" placeholder="Search books..">
+                    <button class="py-2 px-4 mt-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75" id="search__Btn"> Search </button>
+                </div>
+            <!-- </form> -->
+        </div>
+    </div>
+
+    <!-- Search heading div -->
+    <div class="mt-12 border-y-2">
+        <h1 class="text-3xl p-2 text-center"> Search Results </h1>
+    </div>
+
+    <!-- Search reasult box -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 p-4 lg:gap-2 justify-items-center" id="allData"></div>
+    
+    <div id="msg" class="mt-5 h-40 flex items-center justify-center"> 
+        <p class="text-3xl font-light" id="resultMsg"> Results will be appeare here </p> 
+    </div>
+
+    <!-- loader div -->
+    <div id="loader" class="m-auto w-fit mt-4 h-40" style="display: none;"><img src="./public/loader/Hourglass.gif" alt=""></div>
+
+    <!-- modal -->
+    <div id="modal" class="fixed z-10 left-0 top-0 w-full h-full overflow-auto" style="display: none; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4);">
+        <!-- Modal content -->
+        <div id="parentModalContainer" class="p-5 w-4/5" style="background-color: #fefefe; margin: 15% auto; border: 1px solid #888;">
+            <span class="close float-right text-3xl font-bold cursor-pointer -mt-2" style="color: #aaa;">&times;</span>
+            <div id="contentModal__Container"></div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-200">
+        <h1 class="text-center p-3 text-xl text-black"> &copy; Book Finder || -By Raj Patel ❤️ </h1>
+    </footer>
+
+</body>
+</html>
