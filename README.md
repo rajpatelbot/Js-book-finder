@@ -16,7 +16,7 @@
 # Search books
 ![Screenshot (196)](https://user-images.githubusercontent.com/83405614/150803856-a093291c-b7a0-4a35-b9d6-5ec604672590.png)
 
-# Show results
+# Shown results
 ![Screenshot (197)](https://user-images.githubusercontent.com/83405614/150803915-3a862d59-ab4c-4539-9c3f-054c9aba30ee.png)
 
 # See details
