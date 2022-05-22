@@ -1,6 +1,6 @@
 # Js-book-finder
 
-# Live link : https://rajpatel17-bot.github.io/Js-book-finder/dist/
+Live link : https://rajpatel17-bot.github.io/Js-book-finder/dist/
 
 # Introduction of the project 
 - This is book finder application here you can search any book according to your need. This app is created using JavaScript and Tailwind Css. The google book api is used for 
